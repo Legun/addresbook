@@ -1,0 +1,217 @@
+<html>
+<head>
+<TITLE>Телефонный справочник сотрудников.</TITLE>
+<style> * { font-family:tahoma; font-size:11px;}</style>
+<p align="center">
+<IMG src="i/logo.gif"/IMG>
+</p>
+<p align="center">
+Уважаемые сотрудники, данный телефонный справочник автоматический. Обновляется 1 раз в сутки. Поэтому, если Вы увидите какие-либо ошибки в контактных данных, то просто сообщите нам о них.
+<BR>
+Внимание! Если вверху страницы повилась надпись, говорящая о том, что в целях безопасности InternetExplorer заблокировал некоторое активное содержимое, то просто нажмите на эту надпись и разрешите активное содержимое, тогда будет работать полнофункциональная сортировка в таблице.
+<BR>
+Полезный совет: с помощью ролика мыши можно прокручивать содержимое страницы, а, если при этом удерживать клавишу Ctrl, то будет изменяться масштаб страницы!
+</p>
+
+<style type="text/css">
+table.sort{
+border-spacing:0.1em;
+margin-bottom:1em;
+margin-top:1em
+}
+table.sort td{
+border:0 solid #CCCCCC;
+padding:0.3em 1em
+}
+table.sort thead td{
+cursor:pointer;
+cursor:hand;
+font-weight:bold;
+text-align:center;
+vertical-align:middle
+}
+table.sort thead td.curcol{
+background-color:#999999;
+color:#FFFFFF
+}
+</style>
+
+<script type="text/javascript" src="Sort.js"></script>
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.liveFilter.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$('table.live_filter').liveFilter('fade');
+	});
+	$(document).ready(function() {
+	$('ul.list_filter').liveFilter('slide');
+	});
+</script>
+
+<body>
+<p>Фильтр поиска:
+<input class="filter" type="text" value="" name="livefilter"></input></p>
+<p>Фильтр работает по всем столбцам таблицы! Внимание - в строке поиска не используйте пробелы!</p>
+<table border="0"width="100%" cellpadding="11" class="sort live_filter" align="center">
+<CAPTION><H1>Телефонный справочник сотрудников.</H1></CAPTION>
+<thead>
+<tr BGCOLOR=#999900>
+<td>Имя сотрудника:</td>
+<td>Электронная почта:</td>
+<td>Телефон:</td>
+<td>Мобильный:</td>
+<td>Страна:</td>
+<td>Город:</td>
+<td>Организация:</td>
+<td>Отдел:</td>
+<td>Должность:</td>
+</tr>
+</thead>
+<tbody>
+<tr BGCOLOR=#CCCCCC>
+<td>Иванов Иван Иванович</td>
+<td><a class="link" href="mailto:iivanov@superfirma.ru">iivanov@superfirma.ru</a></td>
+<td>+7(999)1654654</td>
+<td>+7(999)5464668</td>
+<td>Россия</td>
+<td>Москва</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Иновационные технологии</td>
+<td>Начальник отдела</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Петров Петр Петрович</td>
+<td><a class="link" href="mailto:ppetrov@superfirma.ru">ppetrov@superfirma.ru</a></td>
+<td>+7(999)3545545<br>+7(999)1275224<br>+7(999)5475475ф</td>
+<td></td>
+<td>Украина</td>
+<td>Киев</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Склад</td>
+<td>Старший кладовщик</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Сидоров Сидор Сидорович</td>
+<td><a class="link" href="mailto:ssidorov@superfirma.ru">ssidorov@superfirma.ru</a></td>
+<td>+7(999)5465465</td>
+<td></td>
+<td>Беларусь</td>
+<td>Минск</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Склад</td>
+<td>Начальник отдела</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Семенов Семен Семенович</td>
+<td><a class="link" href="mailto:ssemenov@superfirma.ru">ssemenov@superfirma.ru</a></td>
+<td>+7(999)4354646</td>
+<td></td>
+<td>Россия</td>
+<td>Санкт-Петербург</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Общий отдел</td>
+<td>Менеджер</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Сергеев Сергей Сергеевич</td>
+<td><a class="link" href="mailto:ssergeev@superfirma.ru">ssergeev@superfirma.ru</a></td>
+<td>+7(999)4564661</td>
+<td>+7(999)6879453</td>
+<td>Россия</td>
+<td>Нижний Новгород</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Бухгалтерия</td>
+<td>Бухгалтер-операционист</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Пупкин Василий Степанович</td>
+<td><a class="link" href="mailto:vpupkin@superfirma.ru">vpupkin@superfirma.ru</a></td>
+<td>+7(999)6509580</td>
+<td></td>
+<td>Украина</td>
+<td>Винница</td>
+<td>ООО "Рога и Копыта"</td>
+<td>ИНформационные технологии</td>
+<td>Сисьадмин</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Харитонов Ульян Исакович</td>
+<td><a class="link" href="mailto:ukharitonov@superfirma.ru">ukharitonov@superfirma.ru</a></td>
+<td>+7(999)6549805</td>
+<td>+7(999)0846546</td>
+<td>Беларусь</td>
+<td>Речица</td>
+<td>ООО "Рога и Копыта"</td>
+<td></td>
+<td>Генеральный директор</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Борисов Борис Борисович</td>
+<td><a class="link" href="mailto:bborisov@superfirma.ru">bborisov@superfirma.ru</a></td>
+<td>+7(999)0464862</td>
+<td></td>
+<td>Россия</td>
+<td>Москва</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Проектный отдел</td>
+<td>Начальник отдела</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Богданов Богдан Богданович</td>
+<td><a class="link" href="mailto:bbogdanov@superfirma.ru">bbogdanov@superfirma.ru</a></td>
+<td>+7(999)6506032</td>
+<td></td>
+<td>Россия</td>
+<td>Екатеринбург</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Рекламный отдел</td>
+<td>Начальник отдела</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Холодова Елизавета Романовна</td>
+<td><a class="link" href="mailto:eholodova@superfirma.ru">eholodova@superfirma.ru</a></td>
+<td>+7(999)6054646</td>
+<td>+7(999)5421024</td>
+<td>Россия</td>
+<td>Владивосток</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Бухгалтерия</td>
+<td>Главбух</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Тихонов Тихон Тихонович</td>
+<td><a class="link" href="mailto:ttihonov@superfirma.ru">ttihonov@superfirma.ru</a></td>
+<td>+7(999)6506542</td>
+<td>+7(999)0056655</td>
+<td>Россия</td>
+<td>Муром</td>
+<td>ООО "Рога и Копыта"</td>
+<td>Отдел материально-технического обеспечения</td>
+<td>Начальник отдела</td>
+</tr>
+<tr BGCOLOR=#CCCCCC>
+<td>Дед Мороз</td>
+<td><a class="link" href="mailto:dmoroz@superfirma.ru">dmoroz@superfirma.ru</a></td>
+<td>+7(999)3513650</td>
+<td></td>
+<td>Северный полюс</td>
+<td>Великий Устюг</td>
+<td>ООО "Рога и Копыта"</td>
+<td></td>
+<td>Начальник отдела по работе с детьми</td>
+</tr>
+</tbody>
+</table>
+<p align="center">
+Всего в телефонном справочнике обнаружено 12 записей.
+<BR>
+</p>
+</BODY>
+</HTML>
+
+<div class="footer">
+<p align="center">
+Программа телефонного справочника была разработана сотрудниками отдела ИТ. С уважением, ИТ-отдел.
+</p>
+</div>
+
